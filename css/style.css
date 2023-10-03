@@ -1,0 +1,317 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+/*MENU DO SITE */
+.logo img
+{
+    width: 40px;
+    margin-right: 10px;
+}
+.logo a{
+    text-decoration: none;
+    color: #263749;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+header
+{
+    padding: 20px 20px;
+    background: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgb(0, 0, 0, 0.3);
+}
+.main-head
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul
+{
+    display: flex;
+    list-style: none;
+}
+nav li
+{
+    padding: 5px 10px;
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    transition: all linear 0.5s;
+    margin-left: 20px;
+}
+nav a
+{
+    transition: .3s;
+}
+nav a:hover
+{
+    color:#263749;
+}
+nav li a
+{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    padding: 5px;
+}
+
+/*MAIN DO SITE*/
+
+section h1
+{
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#home
+{
+    background: linear-gradient(rgba(38,55,73,0.8),rgba(38,55,73,0.8)),
+    url('../img/ninja-home.png') no-repeat center center /cover;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    text-shadow: 5px 10px 5px rgb(0, 0, 0, 0.5);
+    
+}
+#sobre
+{
+    padding: 78px 0;
+}
+#sobre img
+{
+    height: auto;
+    width: 420px;
+}
+.about-text
+{
+    width: 550px;
+}
+.about-main
+{
+    width: 1130px;
+    min-height: 100vh;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.about-text p
+{
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+#curso
+{
+    background: #263749;
+    min-height: 110vh;
+}
+.title-curso h1
+{
+    text-align: center;
+    padding-top: 70px;
+    color: #ffffff;
+}
+.curso-container
+{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 90px;
+}
+.content-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.content-section .card
+{
+    background: #ffffff;
+    flex: 1;
+    margin: 20px 20px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+    align-self: normal;
+}
+.content-section .card img
+{
+    width: 80%;
+    height: auto;
+}
+.content-section .card h2
+{
+    margin: 15px 0px;
+    font-size: 28px;
+}
+.content-section .card p
+{
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0px 15px;
+    margin-bottom: 20px;
+}
+#contato
+{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 15%;
+}
+.contato-form
+{
+    width: 80%;
+}
+.contato-form h1
+{
+    margin-bottom: 30px;
+}
+.contato-form form input,
+form textarea
+{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    border: 1px solid #263749;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+}
+.contato-form textarea
+{
+    resize: none;
+    height: 200px;
+}
+.contato-form form .btn
+{
+    color: #ffffff;
+    display: inline-block;
+    background: #263749;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600px;
+    border: 2px solid transparent;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+.contato-form form .btn:hover
+{
+    background: #141E28;
+
+}
+/*PARTE DE BAIXO DO SITE*/
+footer
+{
+    background-color: #1D2A38;
+}
+.footerContainer
+{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.social
+{
+    display: flex;
+    justify-content: center;
+}
+.social a
+{
+    text-decoration: none;
+    padding: 10px 11px;
+    background-color: #ffffff;
+    margin: 15px;
+    border-radius: 50%;
+}
+.social a i
+{
+    font-size: 2em;
+    color:#1D2A38;
+    opacity: 0.9;
+}
+.social a:hover
+{
+    background-color: #1D2A38;
+    transition: 0.5s;
+}
+.social a:hover i
+{
+    color: #ffffff;
+    transition: 0.5s;
+}
+.footerNav
+{
+    margin: 30px 0;
+}
+.footerNav ul
+{
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li a
+{
+    color: #ffffff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover
+{
+    opacity: 1;
+}
+.footerBottom
+{
+    background-color: #141E28;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p
+{
+    color:#ffffff
+}
+.designer
+{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
